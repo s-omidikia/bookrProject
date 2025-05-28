@@ -1,0 +1,114 @@
+# ========================================
+# Django Project .gitignore (customized)
+# For: Django + PyTest + Celery + Jupyter + Docker + SQLite
+# ========================================
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.pyenv
+
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+*.pyo
+*.pyc
+
+# Django specific
+*.log
+*.pot
+*.pyc
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+local_settings.py
+*.mo
+
+# Migrations (optional to ignore if you want to track them manually)
+**/migrations/
+**/migrations/*.pyc
+**/migrations/__pycache__/
+
+# Pytest and testing
+.pytest_cache/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+htmlcov/
+.vscode/
+.idea/
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# Docker
+*.pid
+*.seed
+*.pid.lock
+docker-compose.override.yml
+.env.docker
+Dockerfile*
+__docker_build__/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Project metadata / builds
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Editor-specific
+.spyderproject
+.spyproject
+.ropeproject
+.vscode/
+.idea/
+
+# Static analysis and type checkers
+.mypy_cache/
+.dmypy.json
+.pytype/
+.pyre/
+cython_debug/
+
+# Pipenv / poetry / pip-tools
+Pipfile.lock
+poetry.lock
+requirements.txt~
+
+# mkdocs / docs
+/site
+docs/_build/
+
+# Misc
+.DS_Store
+Thumbs.db
