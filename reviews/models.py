@@ -31,6 +31,11 @@ class Book(models.Model):
         max_length=20,
         verbose_name="ISBN number of the book."
     )
+    publisher = models.ForeignKey(
+        Publisher,
+        on_delete=models.CASCADE,
+        null=True
+    )
 
 class Contributor(models.Model):
     """A contributor to a Book, e.g. author, editor,
