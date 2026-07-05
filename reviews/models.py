@@ -64,6 +64,9 @@ class Contributor(models.Model):
         help_text="The contact email for the contributor."
     )
 
+    def __str__(self):
+        return self.first_names
+
 class BookContributor(models.Model):
     class ContributionRole(models.TextChoices):
         AUTHOR = "AUTHOR", "Author"
