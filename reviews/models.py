@@ -18,6 +18,9 @@ class Publisher(models.Model):
         help_text="The Publisher's email address."
     )
 
+    def __str__(self):
+        return self.name
+
 class Book(models.Model):
     """A published book."""
 
